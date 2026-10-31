@@ -1,0 +1,22 @@
+# IELTS Speaking Scorer — Dependencies
+# Tất cả miễn phí, chạy hoàn toàn local
+
+# ── Transcription ──────────────────────────────────────────
+faster-whisper          # Faster-Whisper STT (CTranslate2-based)
+
+# ── Audio Analysis ─────────────────────────────────────────
+praat-parselmouth       # Jitter, Shimmer, HNR, Pitch (chuẩn nghiên cứu)
+librosa                 # Silence detection, energy, spectral features
+soundfile               # Đọc file audio (dependency của librosa)
+
+# ── NLP ────────────────────────────────────────────────────
+spacy                   # Dependency parsing, POS tagging
+language-tool-python    # Grammar error detection (local Java server)
+wordfreq                # Lexical frequency measurement
+
+# ── Semantic Similarity (Coherence) ────────────────────────
+sentence-transformers   # all-MiniLM-L6-v2 — chạy local, nhẹ
+
+# ── Utilities ──────────────────────────────────────────────
+numpy
+scipy
